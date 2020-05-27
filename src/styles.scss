@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+/* Font Family */
+
+html, body {
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+.form-inline span {
+    padding-right: 8px;
+    color: white;
+}
+
+.dashboard_wrp {
+    width: 100%;
+    display: inline-block;
+    margin: 20px 0 30px;
+    position: relative;
+
+    .input-group {
+        width: 40%;
+        margin: 0 auto;
+
+        input {
+            font-size: 14px;
+        }
+
+        .input-group-text {     
+            &:disabled {
+                color: #93A1BE;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+
+        i{
+            padding: 10px;
+            color: var(--cyan);
+        }
+    } 
+
+    .dashboard_cnt {
+        padding: 20px;
+    }
+
+}
+
+.dashboard_cards{
+    .col-sm {
+        padding: 15px;
+    }
+    .card {
+        width: 250px;
+        border-radius: 10px;
+        min-height: 200px;
+    
+        .card-title {
+            border-radius: 5px;
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            font-size: medium;
+        }
+    }
+}
+
+.popup_title {
+    border-radius: 5px;
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+}
+
+.no_content {
+    text-align: center;
+    color: #93A1BE;
+}
+
+.navbar-nav > li > .dropdown-menu { 
+    background-color: #343a40;
+    .dropdown-item {
+        color: rgba(255,255,255,.5);
+    }
+    .dropdown-item:hover, .dropdown-item:focus{
+        color: white;
+        background-color: #343a40;
+    }
+}
+
+

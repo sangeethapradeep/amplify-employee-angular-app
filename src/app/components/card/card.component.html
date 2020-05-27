@@ -1,0 +1,37 @@
+<div class="dashboard_cards">
+  <div class="col-sm">
+    <div class="card">
+      <h5 class="card-title">{{config.title}}</h5>
+      <div class="card-body" *ngIf="showContent; else spinner">
+        <ng-container *ngIf="content; else noContent">
+          <p class="card-text">{{config.message}}</p>
+          <a href="javascript:void(0);" class="btn btn-primary" (click)="onView(details)">View</a>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #details>
+  <h5 class="popup_title">{{config.title}}</h5>
+  <div class="card-body">
+    <pre>{{content | json}}</pre>
+    <div class="text-right">
+      <button type="button" class="btn btn-primary" (click)="close()">Close</button>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #spinner>
+  <div style="position: relative; top:50px;">
+    <ngx-spinner size="medium" color="#93A1BE" type="ball-beat" [fullScreen]="false">
+    </ngx-spinner>
+  </div>
+</ng-template>
+
+<ng-template #noContent>
+  <div class="no_content">
+    <h5>No Response for the requested employee</h5>
+  </div>
+</ng-template>
