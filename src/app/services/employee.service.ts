@@ -22,7 +22,7 @@ export class EmployeeService {
 
   public getAttendance(employeeId) {
     const url = `${this.baseUrl}/${this.endpoints.attendance}/${employeeId}`;
-    return this.restService.get(url)
+    return this.restService.getWithRetry(url)
     .pipe(map((_: any) => _.data));
   }
 
