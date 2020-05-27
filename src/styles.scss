@@ -38,6 +38,10 @@ font-family: 'Ubuntu', sans-serif;
         i{
             padding: 10px;
             color: var(--cyan);
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     } 
 
