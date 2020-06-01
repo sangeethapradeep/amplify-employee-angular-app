@@ -1,27 +1,46 @@
-# AmplifyEmployeeApp
+# Angular app integrated with Amplify to login an employee to dashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
-## Development server
+This is a simple employee dashboard app with login provided by AWS cognito user pool using amplify library.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Login screen
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Login](src/assets/images/login.png)
 
-## Build
+## Employee Dashboard screen upon successful login
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![Login](src/assets/images/dashboard.png)
 
-## Running unit tests
+## On-demand details display pop-up fetched from resource server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Login](src/assets/images/details.png)
 
-## Running end-to-end tests
+## Features:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    1. Login using Cognito user pool
+    2. Fetching user details from Identity token
+    3. Fetching details from a resource server
 
-## Further help
+## To run the Application:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    1. Run npm i, to install node modules.
+    2. Update aws-export.js with your cognito credentials.
+    3.Run ng serve -o to build and run the project on brower.
+
+Please, check out the [Employee Resource Server](https://github.com/sangeethapradeep/cognito-spring-employee-app) project
+
+
+**_References:_** 
+
+["Cognito Hosted UI with Amplify in Angular"](https://medium.com/@arjunsk/cognito-hosted-ui-with-amplify-in-angular-7-26c9285675c4)
+
+**_Motivational Credits:_** 
+
+[Arjun SK](https://github.com/arjunsk)
+
+
+
+
+
