@@ -27,7 +27,7 @@ This is a simple employee dashboard app with login provided by AWS cognito user 
 
     1. Run npm i, to install node modules.
     2. Update aws-export.js with your cognito credentials.
-    3.Run ng serve -o to build and run the project on brower.
+    3. Run ng serve -o to build and run the project on brower.
 
 Please, check out the [Employee Resource Server](https://github.com/sangeethapradeep/cognito-spring-employee-app) project
 
